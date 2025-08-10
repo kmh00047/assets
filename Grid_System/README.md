@@ -37,7 +37,11 @@ Whether you're building complex strategy maps, puzzle grids, or RPG world layout
 ---
 
 ## Quick Usage Example
-
+Include the namespace for easy access to GridSystem classes.
+```csharp
+using Assets.GridSystem
+```
+Example demonstrating the usage of the code in this repository.
 ```csharp
 // Define your cell data struct or class
 public struct TileData

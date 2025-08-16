@@ -16,8 +16,8 @@ The goal is to provide a solid foundation so developers can focus on crafting un
 ## Current Contents
 
 - **Grid2D** — Ultra-fast, generic 2D grid container perfect for tile-based and logic-heavy games.  
-- *(Future)* Input handling utilities  
-- *(Future)* Custom visualizers and gizmo helpers  
+- **ECS**    — Huge Entity Control System (ECS), optimized and linked to the *Grid2D* system.
+- *(Future)* Custom visualizers and gizmo helpers and map editors
 - *(Future)* Performance-optimized gameplay frameworks  
 - *(Future)* Shader and lighting helpers  
 - *(Future)* And much more...

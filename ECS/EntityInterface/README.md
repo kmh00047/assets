@@ -19,10 +19,9 @@ public interface ITickable
 }
 ```
 Purpose:
+ - Allows the ECS to update entities, systems, or any object in a unified manner.
 
-    Allows the ECS to update entities, systems, or any object in a unified manner.
-
-    Decouples ticking logic from specific implementations.
+ -  Decouples ticking logic from specific implementations.
 
 ### `IEntity.cs`
 

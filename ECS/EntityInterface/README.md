@@ -25,7 +25,7 @@ Purpose:
 
 ### `IEntity.cs`
 
-Defines the contract for all entities in the ECS.
+ - Defines the contract for all entities in the ECS.
 
 ```csharp
 public interface IEntity : ITickable
@@ -35,21 +35,21 @@ public interface IEntity : ITickable
 ```
 Key Points:
 
-    Every entity must have a unique Guid Id.
+ - Every entity must have a unique Guid Id.
 
-    Entities must implement Tick() (inherited from ITickable).
+ - Entities must implement Tick() (inherited from ITickable).
 
 ### `BaseEntity.cs`
 
 An abstract base class providing:
 
-    Unique ID generation (Guid)
+ - Unique ID generation (Guid)
 
-    Activation/Deactivation lifecycle
+ - Activation/Deactivation lifecycle
 
-    Position tracking (with change events)
+ - Position tracking (with change events)
 
-    Lifecycle hooks (OnCreated, OnActivated, OnDeactivated, OnDestroyed)
+ - Lifecycle hooks (OnCreated, OnActivated, OnDeactivated, OnDestroyed)
 ```csharp
 public abstract class BaseEntity : IEntity
 {
@@ -64,12 +64,13 @@ public abstract class BaseEntity : IEntity
     public abstract void Tick();
 }
 ```
-Notable Feature – Position Change Event:
+### `Notable Features`
+ - Position Change Event:
+Fires whenever an entity moves, making it easy to trigger spatial updates or AI reactions.
 ```csharp
 public event Action<BaseEntity, Vector2Int, Vector2Int> OnPositionChanged;
 ```
-Fires whenever an entity moves, making it easy to trigger spatial updates or AI reactions.
-Example: Creating a Custom Entity
+### `Example: Creating a Custom Entity`
 ```csharp
 public class Enemy : BaseEntity
 {
@@ -85,7 +86,7 @@ public class Enemy : BaseEntity
     }
 }
 ```
-Usage in ECS:
+### `Usage in ECS:`
 ```csharp
 var enemy = new Enemy();
 enemy.Position = new Vector2Int(0, 0);
@@ -93,10 +94,10 @@ enemy.Activate();
 ```
 Design Philosophy
 
-    Minimal but essential contracts → Keeps ECS flexible for any game type.
+ - Minimal but essential contracts → Keeps ECS flexible for any game type.
 
-    Event-driven state changes → Easy to hook into movement or lifecycle events.
+ - Event-driven state changes → Easy to hook into movement or lifecycle events.
 
-    Extendable base class → Common logic handled once; specific behavior defined in subclasses.
+ - Extendable base class → Common logic handled once; specific behavior defined in subclasses.
 
 ---

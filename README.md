@@ -15,8 +15,9 @@ The goal is to provide a solid foundation so developers can focus on crafting un
 
 ## Current Contents
 
-- **Grid2D** — Ultra-fast, generic 2D grid container perfect for tile-based and logic-heavy games.  
-- **ECS**    — Huge Entity Control System (ECS), optimized and linked to the *Grid2D* system.
+- [`GridSystem`](./GridSystem) — Ultra-fast, generic 2D grid container perfect for tile-based and logic-heavy games.  
+- [`ECS`](./ECS)        — Huge Entity Component System (ECS), optimized and linked to the [`GridSystem`](./GridSystem) system.
+- [`TimeSystem`](./TimeSystem) — A centralized **heartbeat** for any game and custom FPS system
 - *(Future)* Custom visualizers and gizmo helpers and map editors
 - *(Future)* Performance-optimized gameplay frameworks  
 - *(Future)* Shader and lighting helpers  

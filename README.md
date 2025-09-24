@@ -7,7 +7,7 @@ Welcome to **Assets**, a curated and growing collection of reusable, high-perfor
 ## About This Repository
 
 This repository serves as a central hub for the core building blocks that power professional-grade Unity games.  
-From ultra-efficient grid systems and input managers to shader helpers and visual debugging tools — each asset is designed with modularity, flexibility, and performance in mind.
+From ultra-efficient grid systems and input managers to shader helpers and visual debugging tools - each asset is designed with modularity, flexibility, and performance in mind.
 
 The goal is to provide a solid foundation so developers can focus on crafting unique gameplay experiences instead of reinventing the wheel.
 

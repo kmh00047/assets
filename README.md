@@ -15,9 +15,9 @@ The goal is to provide a solid foundation so developers can focus on crafting un
 
 ## Current Contents
 
-- [`GridSystem`](./GridSystem) — Ultra-fast, generic 2D grid container perfect for tile-based and logic-heavy games.  
-- [`ECS`](./ECS)        — Huge Entity Component System (ECS), optimized and linked to the [`GridSystem`](./GridSystem)
-- [`TimeSystem`](./TimeSystem) — A centralized **heartbeat** for any game and custom FPS system
+- [`GridSystem`](./GridSystem) - Ultra-fast, generic 2D grid container perfect for tile-based and logic-heavy games.  
+- [`ECS`](./ECS)        - Huge Entity Component System (ECS), optimized and linked to the [`GridSystem`](./GridSystem)
+- [`TimeSystem`](./TimeSystem) - A centralized **heartbeat** for any game and custom FPS system
 - *(Future)* Custom visualizers and gizmo helpers and map editors
 - *(Future)* Performance-optimized gameplay frameworks  
 - *(Future)* Shader and lighting helpers  
@@ -62,7 +62,7 @@ Ensure your code follows the repo’s style guidelines and includes relevant doc
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).  
-Attribution is appreciated but not required — use freely and adapt as you see fit.
+Attribution is appreciated but not required - use freely and adapt as you see fit.
 
 ---
 
@@ -74,5 +74,6 @@ Let’s build a top-tier toolkit together!
 ---
 
 *Build smarter, build faster, build better.*  
-— Your Assets Developer
-— M.Hassaan
+ 
+Your Assets Developer
+### M.Hassaan
